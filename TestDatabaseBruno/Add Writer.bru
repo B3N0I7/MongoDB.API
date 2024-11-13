@@ -1,0 +1,20 @@
+meta {
+  name: Add Writer
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/addWriter
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nom": "lafouine",
+    "prenom": "lafouine",
+    "age": 50,
+    "ville": "paname"
+  }
+}
